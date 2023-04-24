@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link
       rel="icon"
       type="image/png"
@@ -18,7 +18,10 @@
       .attribution {
         font-size: 11px;
         text-align: center;
+        color: white;
+        margin-top:200px;
       }
+
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
@@ -26,42 +29,64 @@
 
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
     <!-- Rating state start -->
+    <div id="content-container">
+      <div id="rating-card">
+        <button id="star-button">
+          <img src="./images/icon-star.svg" alt="star icon" />
+        </button>
+        <h2 class="card-header">How did we do?</h2>
 
-    <div id="rating-card">
-      <h2>How did we do?</h2>
+        <p class="card-text">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="buttons-container">
+          <button class="select-number-button" value="1">1</button>
+          <button class="select-number-button" value="2">2</button>
+          <button class="select-number-button" value="3">3</button>
+          <button class="select-number-button" value="4">4</button>
+          <button class="select-number-button" value="5">5</button>
+        </div>
+        <button id="submit-button">Submit</button>
+      </div>
+      <!-- Rating state end -->
 
-      <p>
-        Please let us know how we did with your support request. All feedback is
-        appreciated to help us improve our offering!
-      </p>
+      <!-- Thank you state start -->
 
-      <button class="select-number-button">1</button>
-      <button class="select-number-button">2</button>
-      <button class="select-number-button">3</button>
-      <button class="select-number-button">4</button>
-      <button class="select-number-button">5</button>
+      <br />
+    
+        <div id="thankyou-card">
+          <img id="thankyou-image" src="./images/illustration-thank-you.svg" alt="check icon" />
+          <div id="thankyou-rating">
+            <p>
+            You selected
+            <span id="rating-number"></span>
+            out of 5 
+          </p>
+          </div>
+          <p id="thankyou-thanks">Thank you!</p>
+          <p id="thankyou-text">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
 
-      <button id="submit-button">Submit</button>
+          <!-- Thank you state end -->
+
+         
+        </div>
+        <div class="attribution">
+          Challenge by
+          <a
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Your Name Here</a>.
+        </div>
     </div>
-    <!-- Rating state end -->
 
-    <!-- Thank you state start -->
-
-    <br />
-    You selected
-    <!-- Add rating here -->
-    out of 5 Thank you! We appreciate you taking the time to give a rating. If
-    you ever need more support, don’t hesitate to get in touch!
-
-    <!-- Thank you state end -->
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    <script src="./js/script.js"></script>
   </body>
 </html>
