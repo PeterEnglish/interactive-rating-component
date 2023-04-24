@@ -37,7 +37,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/PeterEnglish/interactive-rating-component](https://github.com/PeterEnglish/interactive-rating-component)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://peterenglish.github.io/interactive-rating-component/](https://peterenglish.github.io/interactive-rating-component/)
 
 ## My process
 
